@@ -10,12 +10,68 @@
     <!-- this is a comment -->
     <!-- HTML = head + BODY -->
     <h2>Login to my first HTML webpage</h2>
-    
     <a href="www.amazon.com">Our home page</a>
+
+
     <br>
-    <a href="www.google.com">Google</a>
+    <br> 
+    <!-- br is for line break -->
+    <form>
+        <!-- form is taking input from user and sending it to server -->
+        <label>User name</label>
+        <input type="text">
+
+        <label>Password</label>
+        <input type="text">
+          <br>
+        <label>Choose your campus</label>
+        <select>
+            <option value="">Chicago</option>
+            <option value="">Virginia</option>
+            <option value="">Online</option>
+        </select>
+
+        <input type="submit" value="Login"/>
+
+    </form>
 
 
 
 </body>
+
+<style>
+        h2 {
+            color:brown;
+            font-style:oblique;
+            font-size: 120%;
+        }
+
+        form {
+            background-color: beige;
+            padding: 20px;
+            
+        }
+        input[type='text']{
+            width: 100%;
+            border: 1px;
+            margin: 8px 0;
+            padding: 12px 20px;
+            box-sizing: border-box;
+        }
+        input[type='submit']{
+            background-color: aqua;
+            width: 100%;
+            border: 1px;
+            padding: 12px 20px;
+            margin:8px 0;
+        }
+        body{
+            background-color: azure;
+        }
+    
+    
+    </style>
+
+
+
 </html>
