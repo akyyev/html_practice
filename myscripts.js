@@ -115,6 +115,26 @@ console.log(cubedList(realNumArr));
 //time 2:53:59
 //https://www.youtube.com/watch?v=PkZNo7MFNFg
 
+//takes int array and adds numbers together
+const sum2 = (function(){
+    return function sum(...args){
+        return args.reduce((a,b) => a+b, 0);
+    };
+})();
+
+console.log(sum2(1,2,3,4,5,6,7));
+
+
+//copying arrays to another array, not the reference point
+let arr3 = [1,2,3,4,5,6,7,8,9,10];
+let arr4 = [...arr3];  // copies all values to new array
+
+arr3[0]=10;
+
+console.log(arr4);
+
+
+
 
 
 
